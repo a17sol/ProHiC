@@ -26,8 +26,7 @@ dependencies = [
 	"pyqtgraph",
 	"pgcolorbar",
 	"pyshortcuts",
-	"cooler; sys_platform != 'win32'",
-	"cooler @ https://github.com/a17sol/win_cooler/archive/master.zip ; sys_platform == 'win32'"
+	"cooler"
 ]
 
 [tool.setuptools]
