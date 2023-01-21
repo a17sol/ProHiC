@@ -15,7 +15,7 @@ To install ProHiC, you should have python 3.8, 3.9 or 3.10 and pip installed on 
 ```
 pip install https://github.com/a17sol/ProHiC/archive/master.zip
 ```
-See **Installation details** for more for details on how to install the program on your operating system, additional steps may be necessary.
+See **Installation details** for details on how to install the program on your operating system, additional steps may be necessary.
 
 After installation it is possible to create a desktop shortcut with simple command:
 ```
@@ -54,8 +54,8 @@ We must note, that `cooler` package depends on some Windows-incompatible package
 
 #### MacOS
 
-##### If your Mac has proprietary processor
-On Mac with Apple processor you always need to use conda environment with pip installed inside, as these pocessors does not support some of the standerd packages.
+##### If your Mac has a proprietary processor
+On Mac with Apple processor you always need to use conda environment with pip installed inside, as these pocessors does not support some of the standard packages.
 
 ##### If you don't have any python on your computer
 1. Download installer (e.g. <a href="https://www.python.org/ftp/python/3.9.5/python-3.9.5-macos11.pkg">here</a>)
@@ -67,7 +67,7 @@ You have two options:
 2. Use conda environment. It is safe, but a bit more difficult.
 
 ##### If you don't have pip on your computer
-pip always came with python, but in case you need, you can use
+pip always come with python, but in case you need, you can use
 ```
 sudo apt install python3-pip
 ```
@@ -77,7 +77,7 @@ Run Terminal and type
 ```
 sudo pip install https://github.com/a17sol/ProHiC/archive/master.zip
 ```
-In most cases "sudo" is not really necessary, but is recommended.
+In most cases `sudo` is not really necessary, but is recommended.
 
 #### Linux
 
@@ -113,7 +113,7 @@ Relevant repository is <a href="https://github.com/a17sol/ProHiC_portable">ProHi
 ### Uninstallation
 To uninstall browser just use 
 ```
-pip uninstall ProHiC
+pip uninstall prohic
 ```
 Note that desktop shortcut should be removed manually.
 
