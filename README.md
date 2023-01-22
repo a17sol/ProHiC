@@ -1,8 +1,8 @@
 # ProHiC - Prokaryotic HiC Browser
 A small cross-platform browser for prokaryotic HiC maps.
 
-ProHiC provides handy GUI for visualizing and browsing HiC contact maps and tracks of small circular genomes.
-It provides unique features, such as genome rolling, instant observed/expected map computing,
+ProHiC provides handy GUI for visualizing and browsing HiC contact maps of small circular genomes and related tracks.
+It contains unique features, such as genome rolling, instant observed/expected map computing,
 extremely convenient colorscale adjusting.
 
 ProHiC is tested on Windows, Linux, MacOS. Portable version for Windows is also
@@ -11,11 +11,11 @@ availabe.
 ## Installation
 
 ### Standard installation
-To install ProHiC, you should have python 3.8, 3.9 or 3.10 and pip installed on your computer. If you don't have one of them, see below. When all conditions are met, browser can be installed from github with pip. 
+To install ProHiC, you should have python higher then 3.8 and pip installed on your computer. If you don't have one of them, see below. When all conditions are met, browser can be installed from github with pip. 
 ```
 pip install https://github.com/a17sol/ProHiC/archive/master.zip
 ```
-See **Installation details** for details on how to install the program on your operating system, additional steps may be necessary.
+See **Installation details** for details on how to install the program on your operating system, additional steps may be required.
 
 After installation it is possible to create a desktop shortcut with simple command:
 ```
@@ -34,11 +34,11 @@ On some systems (e.g. Ubuntu) you should manually allow launching in the right-b
 	- Second screen: Only pip and py launcher
 	- Third screen: default
 
-##### If your python is lower than 3.8, or higher than 3.10
+##### If your python is lower than 3.8
 You have three options:
 1. Use a <a href="https://github.com/a17sol/ProHiC_portable">portable version</a>
 2. Uninstall existing version and install 3.9 as described above. Make sure that this does not cause incompatibilities with other applications.
-3. Use conda environment. It is safe, but a bit more difficult.
+3. Use conda environment.
 
 ##### If you don't have pip on your computer
 1. Download installer (<a href="https://bootstrap.pypa.io/get-pip.py">here</a>)
@@ -50,8 +50,6 @@ Run cmd.exe and type
 pip install https://github.com/a17sol/ProHiC/archive/master.zip
 ```
 
-We must note, that `cooler` package depends on some Windows-incompatible packages, so modified version of `cooler` (`win_cooler`) will be installed automatically. It lacks some of the functionality, but is enough for our needs.
-
 #### MacOS
 
 ##### If your Mac has a proprietary processor
@@ -61,7 +59,7 @@ On Mac with Apple processor you always need to use conda environment with pip in
 1. Download installer (e.g. <a href="https://www.python.org/ftp/python/3.9.5/python-3.9.5-macos11.pkg">here</a>)
 2. Run inastaller.
 
-##### If your python is lower than 3.8, or higher than 3.10
+##### If your python is lower than 3.8
 You have two options:
 1. Uninstall existing version and install 3.9 as described above. Make sure that this does not cause incompatibilities with other applications.
 2. Use conda environment. It is safe, but a bit more difficult.
@@ -87,7 +85,7 @@ If you really need to install it, use the terminal command
 ```
 sudo apt install python3.9
 ```
-##### If your python is lower than 3.8, or higher than 3.10
+##### If your python is lower than 3.8
 You have two options:
 1. Uninstall existing version and install 3.9 as described above. Make sure that this does not cause incompatibilities with other applications.
 2. Use conda environment. It is safe, but a bit more difficult.
@@ -106,7 +104,7 @@ sudo pip install https://github.com/a17sol/ProHiC/archive/master.zip
 ```
 
 ### Portable version
-To download the portable version for Windows, click the link: <a href="https://github.com/a17sol/ProHiC_portable/archive/master.zip">Download ProHiC_portable</a>.
+To download the portable version for Windows, click <a href="https://github.com/a17sol/ProHiC_portable/archive/master.zip">here</a>.
 
 Relevant repository is <a href="https://github.com/a17sol/ProHiC_portable">ProHiC_portable</a>
 

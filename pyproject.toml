@@ -9,7 +9,7 @@ authors = [{name="Mikhail A. Solovyev"}]
 description = "Prokaryotic HiC Browser"
 readme = "README.md"
 license = {text = "MIT"}
-requires-python = ">=3.8, <3.11"
+requires-python = ">=3.8"
 classifiers = [
 	"Programming Language :: Python :: 3",
 	"License :: OSI Approved :: MIT License",
