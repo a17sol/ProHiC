@@ -67,7 +67,7 @@ You have two options:
 ##### If you don't have pip on your computer
 pip always come with python, but in case you need, you can use
 ```
-sudo apt install python3-pip
+python3 -m ensurepip
 ```
 
 ##### Finally, when everything is ready
