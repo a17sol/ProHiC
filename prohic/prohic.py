@@ -346,7 +346,7 @@ class hicInterface(): #Convinient envelope for cooler, also processing data and 
 		if file[-6:]==".mcool":
 			resolutions=[i.split('/')[-1] for i in cooler.fileops.list_coolers(file)]
 			if str(resolution) not in resolutions:
-				diffResList=list(enumerate([abs(i-resolution) for i in resolutions]))
+				diffResList=list(enumerate([abs(int(i)-resolution) for i in resolutions]))
 				resolution=int(resolutions[min(diffResList, key=lambda i : i[1])[0]])
 			self.clr=cooler.Cooler(file+'::resolutions/'+str(resolution))
 			self.rawdata=self.clr.matrix(balance=True)[:, :]
@@ -362,7 +362,7 @@ class hicInterface(): #Convinient envelope for cooler, also processing data and 
 			self.resolutions=[str(self.clr.binsize)]
 
 		elif file[-3:]==".np": #numpy savetxt files
-			self.rawdata=np.loadtxt(self.fname)
+			self.rawdata=np.loadtxt(file)
 			self.name=file
 			self.res=1
 			self.resolutions=[]
@@ -785,7 +785,8 @@ def main():
 
 	global monoFont
 	global dpr
-
+	
+	np.seterr(invalid='ignore')
 	pg.setConfigOption('foreground', '#AAA') #make fg color lighter
 
 	app = QtWidgets.QApplication(sys.argv) #GUI control object

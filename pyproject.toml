@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ProHiC"
-version = "0.3.1"
+version = "0.3.2"
 authors = [{name="Mikhail A. Solovyev"}]
 description = "Prokaryotic HiC Browser"
 readme = "README.md"
@@ -26,7 +26,7 @@ dependencies = [
 	"pyqtgraph",
 	"pgcolorbar",
 	"pyshortcuts",
-	"cooler"
+	"cooler>=0.9"
 ]
 
 [tool.setuptools]
